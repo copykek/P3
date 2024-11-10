@@ -679,6 +679,9 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu__option-title {
   font-family: "Roboto", sans-serif;
@@ -687,6 +690,9 @@ ul {
   color: black;
   margin: 0;
   font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu__option-description {
   font-family: "Roboto", sans-serif;
@@ -694,6 +700,9 @@ ul {
   font-weight: 300;
   color: black;
   margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu__option-price {
   font-family: "Roboto", sans-serif;

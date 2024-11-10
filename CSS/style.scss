@@ -363,15 +363,24 @@ ul {
             display: flex;
             flex-direction: column;
             gap: 5px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
     
         &-title {
             @include font-settings($Roboto, 18px, 500); // la maquette dit '500' mais pas 'bold'
             font-weight: bold;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
         
         &-description {
             @include font-settings($Roboto, 15.02px, 300);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
     
         &-price {
