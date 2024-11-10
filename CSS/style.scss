@@ -386,6 +386,9 @@ ul {
         &-price {
             @include font-settings($Roboto, 15.02px, 700);
             align-self: flex-end;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
     
         &-confirmation {

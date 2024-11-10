@@ -711,6 +711,9 @@ ul {
   color: black;
   margin: 0;
   align-self: flex-end;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu__option-confirmation {
   display: flex;
