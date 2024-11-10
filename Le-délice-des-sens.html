@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le délice des sens / OMF</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <section class="header__logo-container">
+            <a href="index.html"><div class="header__arrow-box"><span class="header__arrow--rotated"><i class="fa-solid fa-arrow-right"></i></span></div></a>
+            <h1 class="header__logo--text">ohmyfood</h1>
+            <img class="header__logo--png" src="./images/logo/ohmyfood.png" alt="logo">
+        </section>
+        <section class="header-restaurant">
+            <img class="header-restaurant__illustration" src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="illustration">
+        </section>
+    </header>
+    <main class="main-restaurant">
+        <section class="fake-menu-radius"></section>
+        <section class="restaurant">
+            <span class="restaurant__title">Le délice des sens</span>
+            <input type="checkbox" id="like" class="restaurant__like"/>
+        </section>
+        <section class="menu">
+            <h3 class="menu__type">ENTRÉES</h3>
+            <div class="menu__underlining"></div>
+            <div class="menu__option">
+                <input type="checkbox" id="option1" class="menu__option-checkbox">
+                <label for="option1" class="menu__option-card">
+                    <span class="menu__option-item">
+                        <h4 class="menu__option-title">Tartare de thon</h4>
+                        <p class="menu__option-description">Assaisonné au yuzu</p>
+                    </span>
+                    <span class="menu__option-price">25€</span>
+                </label>
+                <div class="menu__option-confirmation">
+                    <div class="menu__option-confirmation-dot"><i class="fa-solid fa-check"></i></div>
+                </div>
+            </div>
+            <div class="menu__option">
+                <input type="checkbox" id="option2" class="menu__option-checkbox">
+                <label for="option2" class="menu__option-card">
+                    <span class="menu__option-item">
+                        <h4 class="menu__option-title">Bouchée de homard croustillant</h4>
+                        <p class="menu__option-description">Et sa farandole de petits légumes</p>
+                    </span>
+                    <span class="menu__option-price">35€</span>
+                </label>
+                <div class="menu__option-confirmation">
+                    <div class="menu__option-confirmation-dot"><i class="fa-solid fa-check"></i></div>
+                </div>
+            </div>
+            <div class="menu__option">
+                <input type="checkbox" id="option3" class="menu__option-checkbox">
+                <label for="option3" class="menu__option-card">
+                    <span class="menu__option-item">
+                        <h4 class="menu__option-title">Velouté de cèpes</h4>
+                        <p class="menu__option-description">Aux truffes</p>
+                    </span>
+                    <span class="menu__option-price">20€</span>
+                </label>
+                <div class="menu__option-confirmation">
+                    <div class="menu__option-confirmation-dot"><i class="fa-solid fa-check"></i></div>
+                </div>
+            </div>
+        </section>
+        <section class="menu">
+            <h3 class="menu__type">PLATS</h3>
+            <div class="menu__underlining"></div>
+            <div class="menu__option">
+                <input type="checkbox" id="option4" class="menu__option-checkbox">
+                <label for="option4" class="menu__option-card">
+                    <span class="menu__option-item">
+                        <h4 class="menu__option-title">Poulet rôti aux herbes de Provence</h4>
+                        <p class="menu__option-description">Et sa crème de truffe</p>
+                    </span>
+                    <span class="menu__option-price">40€</span>
+                </label>
+                <div class="menu__option-confirmation">
+                    <div class="menu__option-confirmation-dot"><i class="fa-solid fa-check"></i></div>
+                </div>
+            </div>
+            <div class="menu__option">
+                <input type="checkbox" id="option5" class="menu__option-checkbox">
+                <label for="option5" class="menu__option-card">
+                    <span class="menu__option-item">
+                        <h4 class="menu__option-title">Langouste rôtie</h4>
+                        <p class="menu__option-description">Et ses légumes de saison</p>
+                    </span>
+                    <span class="menu__option-price">35€</span>
+                </label>
+                <div class="menu__option-confirmation">
+                    <div class="menu__option-confirmation-dot"><i class="fa-solid fa-check"></i></div>
+                </div>
+            </div>
+            <div class="menu__option">
+                <input type="checkbox" id="option6" class="menu__option-checkbox">
+                <label for="option6" class="menu__option-card">
+                    <span class="menu__option-item">
+                        <h4 class="menu__option-title">Côte de bœuf Angus</h4>
+                        <p class="menu__option-description">Et sa purée de panais</p>
+                    </span>
+                    <span class="menu__option-price">44€</span>
+                </label>
+                <div class="menu__option-confirmation">
+                    <div class="menu__option-confirmation-dot"><i class="fa-solid fa-check"></i></div>
+                </div>
+            </div>
+        </section>
+        <section class="menu">
+            <h3 class="menu__type">DESSERTS</h3>
+            <div class="menu__underlining"></div>
+            <div class="menu__option">
+                <input type="checkbox" id="option7" class="menu__option-checkbox">
+                <label for="option7" class="menu__option-card">
+                    <span class="menu__option-item">
+                        <h4 class="menu__option-title">Farandole de desserts</h4>
+                        <p class="menu__option-description">Du chef</p>
+                    </span>
+                    <span class="menu__option-price">18€</span>
+                </label>
+                <div class="menu__option-confirmation">
+                    <div class="menu__option-confirmation-dot"><i class="fa-solid fa-check"></i></div>
+                </div>
+            </div>
+            <div class="menu__option">
+                <input type="checkbox" id="option8" class="menu__option-checkbox">
+                <label for="option8" class="menu__option-card">
+                    <span class="menu__option-item">
+                        <h4 class="menu__option-title">Crème brulée</h4>
+                        <p class="menu__option-description">Revisitée</p>
+                    </span>
+                    <span class="menu__option-price">22€</span>
+                </label>
+                <div class="menu__option-confirmation">
+                    <div class="menu__option-confirmation-dot"><i class="fa-solid fa-check"></i></div>
+                </div>
+            </div>
+            <div class="menu__option">
+                <input type="checkbox" id="option9" class="menu__option-checkbox">
+                <label for="option9" class="menu__option-card">
+                    <span class="menu__option-item">
+                        <h4 class="menu__option-title">Tiramisu</h4>
+                        <p class="menu__option-description">À la noisette</p>
+                    </span>
+                    <span class="menu__option-price">23€</span>
+                </label>
+                <div class="menu__option-confirmation">
+                    <div class="menu__option-confirmation-dot"><i class="fa-solid fa-check"></i></div>
+                </div>
+            </div>
+        </section>
+        <section class="restaurant"><button class="restaurant__button">commander</button></section>
+    </main>
+    <footer class="footer">
+        <a href=#><h3 class="footer__logo">OhMyFood</h3></a>
+        <section class="footer__set-of-links">
+            <ul class="footer__subset-of-links">
+                <li><a href=#>
+                    <div class="footer__icon-box"><span class="footer__icon--standard"><i class="fa-solid fa-utensils"></i></span></div>
+                    <span class="footer__text--bold">Proposer un restaurant</span>
+                </a></li>
+                <li><a href=#>
+                    <div class="footer__icon-box"><span class="footer__icon--rotated"><i class="fa-solid fa-handshake"></i></span></div>
+                    <span class="footer__text--bold">Devenir partenaire</span>
+                </a></li>
+            </ul>
+            <ul class="footer__subset-of-links">
+                <li><a href=# class="footer__text--standard">Mentions légales</a></li>
+                <li><a href="mailto:example@domain.com" class="footer__text--standard">Contact</a></li>
+            </ul>
+        </section>
+    </footer>
+</body>
+</html>

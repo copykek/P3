@@ -1,0 +1,55 @@
+@mixin font-settings($font, $size, $weight, $color: black, $margin: 0) {
+    font-family: $font;
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+    margin: $margin;
+}
+
+@mixin button {
+    @include font-settings($Roboto, 16px, 500, $white);
+    background: linear-gradient(180deg, $secondary, $gradient);
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    transition: background-color 0.3s;
+    padding: 15.5px 22.44px;
+    border-radius: 25px;
+    cursor: $cursor;
+
+    &:hover {
+        filter: brightness(1.1);
+    }
+}
+
+@mixin heart {
+  width: 22px;
+  transition: all 0.3s;
+  cursor: $cursor;
+  font-size: 22px;
+  position: relative;
+
+  &::before {
+    content: '\f004';
+    font-family: 'Font Awesome 6 Free', sans-serif;
+    background-image: linear-gradient($heart, $heart);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: all 0.1s; // maquette req: instant
+    display: inline-block;
+  }
+
+  &:checked {
+    &::before {
+      background-image: linear-gradient(0deg, $secondary, $gradient);
+      font-weight: 900;
+    }
+  }
+}
+
+@mixin level-1-container($max-width: 1440px, $width: 100%, $display: flex, $direction: column, $box-sizing: border-box) {
+    max-width: $max-width;
+    width: $width;
+    display: $display;
+    flex-direction: $direction;
+    box-sizing: $box-sizing;
+}

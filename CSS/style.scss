@@ -1,0 +1,415 @@
+// CMD: sass --watch CSS/style.scss:CSS/style.css
+// TEST LINE
+
+@import './variables','./mixins','./header','./footer';
+
+//#region ********************************************* LEVEL 0 CONTAINERS
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+    background-color: $white; // vs customized navigators
+}
+
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+//#endregion
+//#region ********************************************* GENERAL & RESETS
+
+a, h2, ul, button, input {
+    all: unset;
+}
+
+a {
+    cursor: $cursor;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, a, li, ul, ol {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+//#endregion
+//#region ********************************************* MAIN HOMEPAGE
+
+.main-home {
+    @include level-1-container(100%);
+    align-items: center;
+}
+
+.introduction {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background-color: $vlightgray;
+
+    @media (min-width: 900px) {
+        box-shadow: none;
+    }
+
+    &__title {
+        @include font-settings($Roboto, 24px, 700);
+        margin: 25px $scaling_30 20px;
+
+        @media (min-width: 700px) {
+            font-size: 28px;
+        }
+
+        @media (min-width: 800px) {
+            font-size: 34px;
+        }
+
+        @media (min-width: 900px) {
+            font-size: 40px;
+        }
+    }
+
+    &__paragraphe {
+        @include font-settings($Roboto, 18px, 300, $vdarkgray);
+        margin: 00px $scaling_30;
+    }
+    
+    &__button {
+        @include button();
+        margin: 20px $scaling_30 25px;
+    }
+}
+
+.fonctionnement { // test
+    width: $scaled_341_of_375;
+    max-width: 1080px;
+    display: flex;
+    flex-direction: column;
+    
+    &__title {
+        @include font-settings($Roboto, 24px, 700);
+        margin-top: 50px;
+        margin-bottom: 25px;
+        margin-left: 3px;
+    }
+
+    &__set-of-cards {
+        width: 100%;
+        max-width: 1053px;
+        display: flex;
+        flex-direction: column;
+
+        @media (min-width: 1160px) {
+            flex-direction: row;
+            margin-bottom: 50px;
+            gap: 24px;
+        }
+    }
+
+    &__card-slot {
+        width: 100%;
+        height: 72.38px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 50px;
+
+        @media (min-width: 1160px) {
+            margin: 00px;
+            max-width: calc(min(45.37037037037037vw, 490px)); // 490/1080 = 0.4537037037037037
+        }
+    }
+
+    &__card {
+        width: 322.49px;
+        height: 72.38px;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        border-radius: 20px;
+        margin-left: 12px;
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+        background-color: $vlightgray;
+
+        &-dot {
+            width: 24px;
+            height: 24px;
+            border-radius: 12px;
+            margin-left: -12px;
+            margin-top: 23px;
+            background-color: $gradient;
+        }
+
+        &-number {
+            @include font-settings($Roboto, 14.18px, 500, $white);
+            margin-left: -16.4px;
+            margin-top: 26.5px;
+        }
+
+        &-icon {
+            
+            &--gray-phone {
+                transform: scale(0.932, 1.25);
+                margin-left: 33px;
+                margin-top: 31px;
+                color: $darkgray;
+            }
+            
+            &--gray-list {
+                margin-left: 33px;
+                margin-top: 28.4px;
+                color: $darkgray;
+            }
+
+            &--purple-store {
+                transform: scale(1.0015, 1.125);
+                margin-left: 33px;
+                margin-top: 29.5px;
+                color: $gradient;
+            }
+        }
+
+        &-text {
+            @include font-settings($Roboto, 16px, 500);
+            margin-left: 20px;
+            margin-top: 27px;
+        }
+    }
+}
+
+.nouveau-label {
+    @include font-settings($Roboto, 14px, 500, $darkcyan);
+    position: absolute;
+    top: 18px;
+    right: 24px;
+    background-color: $tertiary;
+    padding: 6px 12.44px;
+    z-index: 1;
+}
+
+.restaurants {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 00px;
+    background-color: $vlightgray;
+    
+    @media (min-width: 700px) {
+        padding: 30px 00px;
+    }
+
+    &__title {
+        @include font-settings($Roboto, 24px, 700);
+        width: $scaled_341_of_375;
+        max-width: 1074px;
+        margin: 00px 3px 10px;
+    }
+
+    &__subset-of-cards {
+        width: $scaled_341_of_375;
+        max-width: 1080px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media (min-width: 700px) {
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 28px;
+            gap: calc(min(6.94444444444444vw, 100px)); // 100/1440 = 0.0694444444444444
+        }
+    }
+
+    &__card {
+        width: 100%;
+        height: 251px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 18px;
+        border-radius: 15px;
+        background-color: $white;
+        position: relative;
+
+        @media (min-width: 700px) {
+            margin: 00px;
+            max-width: calc(min(45.37037037037037vw, 490px)); // 490/1080 = 0.4537037037037037
+        }
+    
+        &-illustration { // 13 img vs 5.8 cartouche ~= 69.15 vs 30.85
+            height: 69.15%;
+            border-radius: 15px 15px 0 0;
+            object-fit: cover;
+        }
+
+        &-content {
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 15px 22px 00px 18.74px;
+        }
+
+        &-text {
+            display: flex;
+            flex-direction: column;
+            gap: 3.6px;
+        }
+
+        &-restaurant {
+            @include font-settings($Roboto, 18px, 700)
+        }
+
+        &-illustrated {
+            @include font-settings($Roboto, 17px, 300)
+        }
+    }
+
+    &__like {
+        @include heart();
+        margin-top: 22px;
+    }
+}
+
+//#endregion
+//#region ********************************************* MAIN RESTAURANT
+
+.main-restaurant {
+    @include level-1-container(1055px);
+    margin-top: -40px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    background-color: $vlightgray;
+    padding: 00px calc(min(403px, 3.46666666666667vw)); // 13/375 = 0.0346666666666667
+    gap: 40px;
+}
+
+.restaurant {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+
+    &__title {
+        @include font-settings($Shrikhand, 28px, 400);
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    &__like {
+        @include heart();
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    &__button {
+        @include button();
+        margin-bottom: 40px;
+    }
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    &__type {
+        display: flex;
+        flex-direction: column;
+        @include font-settings($Roboto, 16px, 300)
+    }
+
+    &__underlining {
+        width: 40px;
+        height: 3px;
+        margin-top: 5px;
+        background-color: $tertiary;
+    }
+
+    &__option {
+        position: relative;
+        display: flex;
+        border-radius: 15.04px;
+        margin-top: 12px;
+        box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: all 0.250s ease-out;
+    
+        &-checkbox {
+            display: none;
+        }
+    
+        &-card {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 15px;
+            cursor: pointer;
+    
+            &:checked::before {
+                width: calc(100% - 59px);
+            }
+        }
+    
+        &-item {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+    
+        &-title {
+            @include font-settings($Roboto, 18px, 500); // la maquette dit '500' mais pas 'bold'
+            font-weight: bold;
+        }
+        
+        &-description {
+            @include font-settings($Roboto, 15.02px, 300);
+        }
+    
+        &-price {
+            @include font-settings($Roboto, 15.02px, 700);
+            align-self: flex-end;
+        }
+    
+        &-confirmation {
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            position: absolute;
+            right: 0;
+            width: 59px;
+            height: 100%;
+            background-color: $tertiary;
+            transform: translateX(100%);
+            transition: transform 0.250s ease;
+            
+            .menu__option-checkbox:checked + .menu__option-card + & {
+                transform: translateX(0);
+            }
+    
+            &-dot {
+                width: 20px;
+                height: 20px;
+                border-radius: 10px;
+                background-color: $white;
+        
+                i {
+                    margin-top: 3.5px;
+                    margin-left: 2.5px;
+                    font-size: 14.2px;
+                    color: $tertiary;
+                }
+            }
+        }
+    }
+}
+
+//#endregion

@@ -1,0 +1,743 @@
+.header {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.header__logo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 800px) {
+  .header__logo-container {
+    height: min(7.875vw, 96px);
+  }
+}
+@media (min-width: 1024px) {
+  .header__logo-container {
+    box-shadow: none;
+  }
+}
+.header__arrow-box {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 17px;
+  top: 17px;
+}
+@media (min-width: 800px) {
+  .header__arrow-box {
+    top: 2.125vw;
+  }
+}
+@media (min-width: 1024px) {
+  .header__arrow-box {
+    top: min(2.470703125vw, 37px);
+  }
+}
+.header__arrow--rotated {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+  margin: 0;
+  margin-left: 7px;
+}
+.header__arrow--rotated i {
+  transform: rotate(180deg);
+}
+.header__logo--text {
+  font-family: "Shrikhand", italic;
+  font-size: 30px;
+  font-weight: 400;
+  color: black;
+  margin: 0;
+  margin-top: 11px;
+  margin-bottom: 8px;
+}
+@media (min-width: 900px) {
+  .header__logo--text {
+    font-family: "Shrikhand", italic;
+    font-size: 32px;
+    font-weight: 400;
+    color: black;
+    margin: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .header__logo--text {
+    display: none;
+  }
+}
+.header__logo--png {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .header__logo--png {
+    height: 34.2px;
+    display: block;
+    object-fit: contain;
+  }
+}
+.header__location-container {
+  box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  background-color: #eaeaea;
+}
+@media (min-width: 900px) {
+  .header__location-container {
+    box-shadow: none;
+  }
+}
+.header__location-details {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #353535;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 15.5px;
+  margin-top: 15.5px;
+  gap: 17px;
+}
+.header__icon-box {
+  width: 12px;
+  height: 16px;
+  font-size: 15px;
+  margin-top: 1.5px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.header-restaurant {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.header-restaurant__illustration {
+  width: 100%;
+  height: clamp(275px, 73.3333333333vw, 383px);
+  object-fit: cover;
+}
+
+.footer {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 22px max(25px, 6.6666666667vw);
+  background-color: rgb(42, 42, 42);
+  gap: 16px;
+}
+@media (min-width: 1024px) {
+  .footer {
+    padding: 22px 25px;
+    flex-direction: row-reverse;
+    padding-top: 60px;
+  }
+}
+@media (min-width: 1440px) {
+  .footer {
+    padding-right: 1.736vw;
+  }
+}
+.footer__logo {
+  font-family: "Shrikhand", italic;
+  font-size: 18px;
+  font-weight: 400;
+  color: #FFFFFF;
+  margin: 0;
+}
+@media (min-width: 1024px) {
+  .footer__logo {
+    margin-right: 36.48px;
+  }
+}
+@media (min-width: 1440px) {
+  .footer__logo {
+    margin-right: 2.53vw;
+  }
+}
+.footer__set-of-links {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  gap: 7px;
+}
+@media (min-width: 1024px) {
+  .footer__set-of-links {
+    flex-direction: row;
+    margin-right: 40px;
+  }
+}
+.footer__subset-of-links {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+@media (min-width: 1024px) {
+  .footer__subset-of-links {
+    flex-direction: row;
+    margin-right: 30px;
+    gap: 15px;
+    align-items: flex-end;
+  }
+}
+.footer__icon-box {
+  width: 14px;
+  height: 13px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 9.11px;
+  overflow: hidden;
+}
+.footer__icon--standard {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #FFFFFF;
+  margin: 0;
+}
+.footer__icon--rotated {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: #FFFFFF;
+  margin: 0;
+}
+.footer__icon--rotated i {
+  transform: rotate(-45deg);
+}
+.footer__text--standard {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #FFFFFF;
+  margin: 0;
+}
+@media (min-width: 1024px) {
+  .footer__text--standard {
+    padding: 0px;
+  }
+}
+.footer__text--bold {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #FFFFFF;
+  margin: 0;
+}
+@media (min-width: 1024px) {
+  .footer__text--bold {
+    padding: 0px;
+  }
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  background-color: #FFFFFF;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+a, h2, ul, button, input {
+  all: unset;
+}
+
+a {
+  cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, a, li, ul, ol {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.main-home {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.introduction {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background-color: #F3F3F3;
+}
+@media (min-width: 900px) {
+  .introduction {
+    box-shadow: none;
+  }
+}
+.introduction__title {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: black;
+  margin: 0;
+  margin: 25px 8vw 20px;
+}
+@media (min-width: 700px) {
+  .introduction__title {
+    font-size: 28px;
+  }
+}
+@media (min-width: 800px) {
+  .introduction__title {
+    font-size: 34px;
+  }
+}
+@media (min-width: 900px) {
+  .introduction__title {
+    font-size: 40px;
+  }
+}
+.introduction__paragraphe {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: #353535;
+  margin: 0;
+  margin: 0px 8vw;
+}
+.introduction__button {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #FFFFFF;
+  margin: 0;
+  background: linear-gradient(180deg, #FF79DA, #9356DC);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.3s;
+  padding: 15.5px 22.44px;
+  border-radius: 25px;
+  cursor: pointer;
+  margin: 20px 8vw 25px;
+}
+.introduction__button:hover {
+  filter: brightness(1.1);
+}
+
+.fonctionnement {
+  width: 90.9333333333vw;
+  max-width: 1080px;
+  display: flex;
+  flex-direction: column;
+}
+.fonctionnement__title {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: black;
+  margin: 0;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  margin-left: 3px;
+}
+.fonctionnement__set-of-cards {
+  width: 100%;
+  max-width: 1053px;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1160px) {
+  .fonctionnement__set-of-cards {
+    flex-direction: row;
+    margin-bottom: 50px;
+    gap: 24px;
+  }
+}
+.fonctionnement__card-slot {
+  width: 100%;
+  height: 72.38px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+@media (min-width: 1160px) {
+  .fonctionnement__card-slot {
+    margin: 0px;
+    max-width: min(45.3703703704vw, 490px);
+  }
+}
+.fonctionnement__card {
+  width: 322.49px;
+  height: 72.38px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  border-radius: 20px;
+  margin-left: 12px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  background-color: #F3F3F3;
+}
+.fonctionnement__card-dot {
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  margin-left: -12px;
+  margin-top: 23px;
+  background-color: #9356DC;
+}
+.fonctionnement__card-number {
+  font-family: "Roboto", sans-serif;
+  font-size: 14.18px;
+  font-weight: 500;
+  color: #FFFFFF;
+  margin: 0;
+  margin-left: -16.4px;
+  margin-top: 26.5px;
+}
+.fonctionnement__card-icon--gray-phone {
+  transform: scale(0.932, 1.25);
+  margin-left: 33px;
+  margin-top: 31px;
+  color: #7E7E7E;
+}
+.fonctionnement__card-icon--gray-list {
+  margin-left: 33px;
+  margin-top: 28.4px;
+  color: #7E7E7E;
+}
+.fonctionnement__card-icon--purple-store {
+  transform: scale(1.0015, 1.125);
+  margin-left: 33px;
+  margin-top: 29.5px;
+  color: #9356DC;
+}
+.fonctionnement__card-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+  margin: 0;
+  margin-left: 20px;
+  margin-top: 27px;
+}
+
+.nouveau-label {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #008766;
+  margin: 0;
+  position: absolute;
+  top: 18px;
+  right: 24px;
+  background-color: #99E2D0;
+  padding: 6px 12.44px;
+  z-index: 1;
+}
+
+.restaurants {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 0px;
+  background-color: #F3F3F3;
+}
+@media (min-width: 700px) {
+  .restaurants {
+    padding: 30px 0px;
+  }
+}
+.restaurants__title {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: black;
+  margin: 0;
+  width: 90.9333333333vw;
+  max-width: 1074px;
+  margin: 0px 3px 10px;
+}
+.restaurants__subset-of-cards {
+  width: 90.9333333333vw;
+  max-width: 1080px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 700px) {
+  .restaurants__subset-of-cards {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 28px;
+    gap: min(6.9444444444vw, 100px);
+  }
+}
+.restaurants__card {
+  width: 100%;
+  height: 251px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 18px;
+  border-radius: 15px;
+  background-color: #FFFFFF;
+  position: relative;
+}
+@media (min-width: 700px) {
+  .restaurants__card {
+    margin: 0px;
+    max-width: min(45.3703703704vw, 490px);
+  }
+}
+.restaurants__card-illustration {
+  height: 69.15%;
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+}
+.restaurants__card-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 15px 22px 0px 18.74px;
+}
+.restaurants__card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 3.6px;
+}
+.restaurants__card-restaurant {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: black;
+  margin: 0;
+}
+.restaurants__card-illustrated {
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+  color: black;
+  margin: 0;
+}
+.restaurants__like {
+  width: 22px;
+  transition: all 0.3s;
+  cursor: pointer;
+  font-size: 22px;
+  position: relative;
+  margin-top: 22px;
+}
+.restaurants__like::before {
+  content: "\f004";
+  font-family: "Font Awesome 6 Free", sans-serif;
+  background-image: linear-gradient(#101010, #101010);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 0.1s;
+  display: inline-block;
+}
+.restaurants__like:checked::before {
+  background-image: linear-gradient(0deg, #FF79DA, #9356DC);
+  font-weight: 900;
+}
+
+.main-restaurant {
+  max-width: 1055px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin-top: -40px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  background-color: #F3F3F3;
+  padding: 0px min(403px, 3.4666666667vw);
+  gap: 40px;
+}
+
+.restaurant {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: center;
+}
+.restaurant__title {
+  font-family: "Shrikhand", italic;
+  font-size: 28px;
+  font-weight: 400;
+  color: black;
+  margin: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.restaurant__like {
+  width: 22px;
+  transition: all 0.3s;
+  cursor: pointer;
+  font-size: 22px;
+  position: relative;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.restaurant__like::before {
+  content: "\f004";
+  font-family: "Font Awesome 6 Free", sans-serif;
+  background-image: linear-gradient(#101010, #101010);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 0.1s;
+  display: inline-block;
+}
+.restaurant__like:checked::before {
+  background-image: linear-gradient(0deg, #FF79DA, #9356DC);
+  font-weight: 900;
+}
+.restaurant__button {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #FFFFFF;
+  margin: 0;
+  background: linear-gradient(180deg, #FF79DA, #9356DC);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.3s;
+  padding: 15.5px 22.44px;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+.restaurant__button:hover {
+  filter: brightness(1.1);
+}
+
+.menu {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.menu__type {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: black;
+  margin: 0;
+}
+.menu__underlining {
+  width: 40px;
+  height: 3px;
+  margin-top: 5px;
+  background-color: #99E2D0;
+}
+.menu__option {
+  position: relative;
+  display: flex;
+  border-radius: 15.04px;
+  margin-top: 12px;
+  box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.25s ease-out;
+}
+.menu__option-checkbox {
+  display: none;
+}
+.menu__option-card {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px;
+  cursor: pointer;
+}
+.menu__option-card:checked::before {
+  width: calc(100% - 59px);
+}
+.menu__option-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu__option-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
+  margin: 0;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu__option-description {
+  font-family: "Roboto", sans-serif;
+  font-size: 15.02px;
+  font-weight: 300;
+  color: black;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu__option-price {
+  font-family: "Roboto", sans-serif;
+  font-size: 15.02px;
+  font-weight: 700;
+  color: black;
+  margin: 0;
+  align-self: flex-end;
+}
+.menu__option-confirmation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  width: 59px;
+  height: 100%;
+  background-color: #99E2D0;
+  transform: translateX(100%);
+  transition: transform 0.25s ease;
+}
+.menu__option-checkbox:checked + .menu__option-card + .menu__option-confirmation {
+  transform: translateX(0);
+}
+.menu__option-confirmation-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+}
+.menu__option-confirmation-dot i {
+  margin-top: 3.5px;
+  margin-left: 2.5px;
+  font-size: 14.2px;
+  color: #99E2D0;
+}
+
+/*# sourceMappingURL=style.css.map */

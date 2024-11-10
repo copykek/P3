@@ -1,0 +1,111 @@
+.header { // used across website
+    @include level-1-container(100%);
+
+    &__logo-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        @media (min-width: 800px) {
+            height: min(7.875vw, 96px); // 63/800 = 0.07875
+        }
+
+        @media (min-width: 1024px) {
+            box-shadow: none;
+        }
+    }
+
+    &__arrow-box {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        left: 17px;
+        top: 17px;
+
+        @media (min-width: 800px) {
+            top: 2.125vw; // 17/800 = 0.02125
+        }
+
+        @media (min-width: 1024px) {
+            top: min(2.470703125vw, 37px); // ((80.6-30)/2)/1024 = 0.02470703125
+        }
+    }
+
+    &__arrow {
+
+        &--rotated {
+            @include font-settings($Roboto, 20px, 500);
+            i {transform: rotate(180deg);}
+            margin-left: 7px;
+        }
+    }
+
+    &__logo {
+        
+        &--text {
+            @include font-settings($Shrikhand, 30px, 400);
+            margin-top: 11px;
+            margin-bottom: 8px;
+
+            @media (min-width: 900px) {
+                @include font-settings($Shrikhand, 32px, 400);
+            }
+            
+            @media (min-width: 1024px) {
+                display: none;
+            }
+        }
+
+        &--png {
+            display: none;
+
+            @media (min-width: 1024px) {
+                height: 34.2px;
+                display: block;
+                object-fit: contain;
+            }
+        }
+    }
+
+    &__location-container {
+        box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+        width: 100%;
+        background-color: $lightgray;
+
+        @media (min-width: 900px) {
+            box-shadow: none;
+        }
+    }
+    
+    &__location-details {
+        @include font-settings($Roboto, 16px, 500, $vdarkgray);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 15.5px;
+        margin-top: 15.5px;
+        gap: 17px;
+    }
+
+    &__icon-box {
+        width: 12px;
+        height: 16px;
+        font-size: 15px;
+        margin-top: 1.5px;
+        display: inline-flex;
+        align-items: center;
+    }
+}
+
+.header-restaurant {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+    &__illustration {
+        width: 100%;
+        height: clamp(275px, 73.33333333333333vw, 383px); // 275/375 = 0.7333333333333333
+        object-fit: cover;
+    }
+}

@@ -1,0 +1,40 @@
+// COLORS
+
+$white:         #FFFFFF;    // standard white (used to enforce background vs customized navigators)
+$black:         #000000;    // standard black (used mainly for fonts)
+$heart:         #101010;    // the heart element is made of a different black (maquette)
+
+$primary:       #99E2D0;    // soft violet
+$secondary:     #FF79DA;    // very light pink
+$tertiary:      #99E2D0;    // very soft cyan
+
+$gradient:      #9356DC;    // soft violet
+
+$vdarkblue:     #003A68;    // very dark blue
+$softblue:      #89C8FA;    // soft blue
+$darkcyan:      #008766;    // dark cyan
+$lightgray:     #eaeaea;    // light gray
+$vlightgray:    #F3F3F3;    // very light gray mostly white
+$vdarkgray:     #353535;    // very dark gray
+$darkgray:      #7E7E7E;    // dark gray
+
+$test_1: rgb(42, 42, 42);   // test color - parent container
+$test_2: rgb(58, 58, 58);   // test color - child container
+$test_3: rgb(74, 74, 74);   // test color - element
+
+// FONTS
+
+$Shrikhand: 'Shrikhand', italic;
+$Roboto: 'Roboto', sans-serif;
+
+// SCALING MARGINS & PADDINGS
+
+$scaling_16e: 4.4vw;                // 16.5/375 = 0.044
+$scaling_20: 5.33333333333333vw;    // 20/375 = 0.0533333333333333
+$scaling_30: 8vw;                   // 30/375 = 0.08
+
+$scaled_341_of_375: 90.93333333333333vw; // 341/375 = 0.9093333333333333
+
+// OTHER
+
+$cursor: pointer;
